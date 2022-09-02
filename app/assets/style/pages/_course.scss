@@ -1,0 +1,23 @@
+.course{
+  a{
+    color: $white;
+    text-decoration: none;
+  }
+  .swiper-slide{
+    text-align: center;
+    padding: 16px 32px;
+    border: 1px solid $white;
+    border-radius: 8px;
+    &:hover{
+      border-color: $primary;
+      color: $primary;
+    }
+    &:focus{
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+}
+.w-140{
+  width: 140px;
+}

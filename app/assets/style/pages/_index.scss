@@ -1,0 +1,350 @@
+.banner {
+  height: 336px;
+  @include pad {
+    height: 680px;
+  }
+}
+.bannerBg {
+  background-image: url(../images/bg_home_mobile.jpg);
+  max-width: 360px;
+  height: 336px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  @include pad {
+    max-width: 1286px;
+    height: 535px;
+    background-image: url(../images/bg_home.jpg);
+  }
+}
+.text-gradient-y {
+  @include gradient-y;
+  background-clip: text;
+  color: transparent;
+}
+.square {
+  width: 10px;
+  height: 10px;
+  background: $white;
+}
+
+h2 {
+  @include pc {
+    font-size: 28px;
+  }
+}
+.fs-5 {
+  @include pc {
+    font-size: 28px !important;
+  }
+}
+
+.bannerText {
+  @include pad {
+    h4 {
+      font-size: 48px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.line {
+  display: block;
+  height: 3pt;
+  width: 50pt;
+  background: $primary;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.line-lg-left {
+  @include pc {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+.text-md-left {
+  @include pc {
+    text-align: left !important;
+  }
+}
+.material-icons {
+  font-size: 50px;
+}
+.text-gradient-y-lg {
+  @include pc {
+    color: $white;
+  }
+}
+.card_hover {
+  @include pc {
+    &:hover {
+      outline: 1px solid $primary;
+      .text-gradient-y-lg {
+        color: transparent;
+      }
+    }
+  }
+}
+.bg-lg-light {
+  @include pc {
+    background: $light !important;
+  }
+}
+
+.number {
+  font-family: 'Azeret Mono';
+  font-weight: bold;
+  color: $primary;
+  font-size: 48px;
+  background: $dark;
+}
+.rounded-12 {
+  border-radius: 12px;
+}
+//輪播swiper
+.program {
+  .swiper {
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 16px;
+    background: $light;
+    border: 1px solid $white;
+    border-radius: 8pt;
+    padding: 16px;
+    font-weight: bold;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+.rounder-24 {
+  border-radius: 24pt;
+}
+.coustom-img {
+  width: 100px;
+}
+.h-card-491 {
+  @include pad {
+    height: 491px;
+  }
+}
+
+.bgImg {
+  background-image: url(../images/info01.jpg);
+  height: 263px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include pc {
+    height: 615px;
+  }
+}
+.bgImg2 {
+  background-image: url(../images/info02.jpg);
+  height: 263px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include pc {
+    height: 615px;
+  }
+}
+.bgImg3 {
+  background-image: url(../images/info03.jpg);
+  height: 263px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include pc {
+    height: 615px;
+  }
+}
+.bgImg4 {
+  background-image: url(../images/info04.jpg);
+  height: 263px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include pc {
+    height: 615px;
+  }
+}
+.mask {
+  opacity: 0.9;
+  height: 263px;
+  .material-icons {
+    color: $white !important;
+  }
+  @include pc {
+    height: 615px;
+    &:hover {
+      background: transparent !important;
+      .material-icons {
+        color: $primary !important;
+      }
+    }
+  }
+}
+.squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+  &-topLeft {
+    border-top: 2px solid $primary;
+    border-left: 2px solid $primary;
+    border-top-left-radius: 10px;
+  }
+  &-topRight {
+    border-top: 2px solid $primary;
+    border-right: 2px solid $primary;
+    border-top-right-radius: 10px;
+  }
+  &-bottomRight {
+    border-bottom: 2px solid $primary;
+    border-right: 2px solid $primary;
+    border-bottom-right-radius: 10px;
+  }
+  &-bottomLeft {
+    border-bottom: 2px solid $primary;
+    border-left: 2px solid $primary;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.card_hover-squareRounded {
+  @include pc {
+    &:hover {
+      .squareRounded {
+        display: block;
+      }
+    }
+  }
+}
+
+.bg-share {
+  background-image: url(../images/bg_share.jpg);
+  height: 733px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rounded-24 {
+  border-radius: 24px;
+  &-unBottomLLeft {
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+}
+.feedback {
+  .swiper {
+    width: 100%;
+    height: 429px;
+    @media (max-width: 991px) {
+      height: auto;
+    }
+    &-img {
+      top: 0;
+      left: 10px;
+      width: 60%;
+      height: 90%;
+      border-radius: 24px;
+      position: absolute;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #7c7e77;
+        border-radius: 24px;
+        left: -10px;
+        top: 10px;
+        z-index: -1;
+        @media (max-width: 991px) {
+          left: -5px;
+          top: 5px;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 24px;
+      }
+      @media (max-width: 991px) {
+        position: relative;
+        width: calc(100% - 5px);
+        height: 213px;
+        left: 5px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      content: '';
+    }
+
+    &-button-next,
+    &-button-prev {
+      position: unset;
+      width: 24px;
+      height: 24px;
+      margin-top: 4px;
+      color: $primary;
+    }
+
+    .swiper-pagination {
+      position: unset;
+      width: auto;
+      .swiper-pagination-bullet {
+        background-color: $primary;
+        opacity: initial;
+        &-active {
+          width: 16px;
+          border-radius: 100px;
+        }
+      }
+    }
+    &-buttons {
+      bottom: 0;
+      left: 30%;
+      transform: translateX(-50%);
+      z-index: 10;
+      position: absolute;
+      @media (max-width: 991px) {
+        position: initial;
+        transform: none;
+      }
+    }
+  }
+  .card {
+    width: 45%;
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+    @media (max-width:991px) {
+      position: relative !important;
+      width: 100%;
+    }
+  }
+}
+
+.max-width-966{
+  max-width: 966px;
+}
