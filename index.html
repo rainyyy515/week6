@@ -1,10 +1,76 @@
----
-title: 程式家教首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>程式家教首頁</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-light py-0">
+      <div class="container">
+        <a class="navbar-brand py-6" href="#"
+          ><h1 class="logo mb-0">程式家教</h1></a
+        >
+        <button
+          class="navbar-toggler border-0 text-primary p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-icons"> drag_handle </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto text-center my-3">
+            <li class="nav-item">
+              <a
+                class="nav-link py-3 px-md-6 fs-7"
+                aria-current="page"
+                href="./index.html"
+                >首頁</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-3 px-md-6 fs-7" href="./course.html">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-3 px-md-6 fs-7" href="#"
+                ><img
+                  src="./assets/images/account.png"
+                  alt="帳戶頭貼"
+                  class="me-1"
+                />登入</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
 <section class="banner pt-md-12">
   <div class="container">
     <div class="bannerBg">
@@ -498,3 +564,15 @@ current: index
     </div>
   </div>
 </section>
+
+    <footer class="footer bg-light">
+      <div class="text-gray-600 text-center py-6 lh-19">
+        Coding Home © 2022 All Rights Reserved
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
